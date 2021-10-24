@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  min-width: 100px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #aaa;
+}
+
+.button:focus {
+  outline: none;
+}
