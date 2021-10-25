@@ -1,0 +1,21 @@
+extends layout.pug
+
+block styles
+  link(rel='stylesheet' href='/link.css')
+  
+block scripts
+  script(src='/fontawesome/solid.js')
+  script(src='/fontawesome/fontawesome.js')
+
+block content
+  .wrapper
+    form.form(action="/")
+      input.input(name="secretLink" readonly value=linkToSecret)
+      button.button
+        i.fas.fa-copy.icon
+      p.copied.hidden Скопировано
+
+    script(src='/link.js')
+        
+
+      

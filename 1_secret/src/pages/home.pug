@@ -1,0 +1,15 @@
+extends layout.pug
+
+block styles
+  link(rel='stylesheet' href='/textarea.css')
+  link(rel='stylesheet' href='/button.css')
+  link(rel='stylesheet' href='/home.css')
+
+block content
+  .wrapper
+    form.form(action="/api/secret" method="POST")
+      textarea.textarea(name="secret" required)
+      label.label
+        input(name="eternal" type="checkbox")
+        | Вечный секрет
+      button.button Создать
